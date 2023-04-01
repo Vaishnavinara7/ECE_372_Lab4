@@ -12,7 +12,11 @@ void initPWMTimer3(){
     TCCR3A &= ~(1<<COM3A0);
         
     //duty cycle to 25%
+    // OCR3A is frequncy 
     OCR3A = 255; // not sure
+    
+    
+    // duty cycle OCR3B
     
 }
 
