@@ -37,6 +37,12 @@ void initPWMTimer4(){
 
 void changeDutyCycle(int tenBits){
    //// NEED TO WORK ON ??
+    // 0V clockwise
+    // 0-2.5 clocwise but decreasing rpm
+    // 2.5 no turning
+    //2.5 to 5 anticlockwise but increasing rpm, 
+    // 5 max rpm
+    
     
     
 }
