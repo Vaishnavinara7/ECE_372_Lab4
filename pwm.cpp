@@ -14,9 +14,9 @@ void initPWMTimer3(){
     //duty cycle to 25%// better to start of 100%
     // OCR3A is frequncy 
     //OCR3A = 255; // not sure
-    OCR4A=1023;
+   // OCR4A=1023;
     // duty cycle OCR3B
-     OCR4B=1023;
+     //OCR4B=1023;
 }
 
 //inverting
@@ -29,10 +29,10 @@ void initPWMTimer4(){
     TCCR4B |= (1<<WGM42)|(1<<CS40);
     //duty cycle to 25% // better to start of 100%
     
-    OCR4A = 1023; // Not sure
+    //OCR4A = 1023; // Not sure
     
     // duty cycle OCR3B 
-    OCR4B=1023;
+   // OCR4B=1023;
 }
 
 void changeDutyCycle(int tenBits){
