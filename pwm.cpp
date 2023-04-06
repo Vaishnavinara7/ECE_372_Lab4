@@ -8,7 +8,7 @@ void initPWMTimer3(){
     
     //WGM = 0111
     TCCR3A |= (1<<COM3A1)|(1<<WGM31)|(1<<WGM30);
-    TCCR3B |= (1<<WGM32)|(1<<CS30);
+    TCCR3B |= (1<<WGM32)|(1<<CS30);// CS31 and CS32 might need to be set to 0
     TCCR3A &= ~(1<<COM3A0);
         
     //duty cycle to 25%// better to start of 100%
@@ -37,4 +37,6 @@ void initPWMTimer4(){
 
 void changeDutyCycle(int tenBits){
    //// NEED TO WORK ON ??
+    
+    
 }
