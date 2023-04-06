@@ -43,6 +43,21 @@ void changeDutyCycle(int tenBits){
     //2.5 to 5 anticlockwise but increasing rpm, 
     // 5 max rpm
     
+    float v = (5.0/1024.0) * tenBits;
+ 
+
+    if(v > 2.5){
+        OCR4A = ((v-2.5)/2.5) * 1023;
+        OCR3A = 0;
+    }
+    else if (fabs(v - 2.5) < 0.0001){      
+        OCR3A = 0;
+        OCR4A = 0;
+    }
+    else{
+        OCR3A = (1-(v/2.5)) * 1023;
+        OCR4A = 0;
+
     
     
 }
